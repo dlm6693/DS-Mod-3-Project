@@ -14,9 +14,9 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 ## Feature Engineering
 * Used log transformations on skewed data to rein it in, but wasn't able to account for zero values, which made up about 50% of the data as seen below. Later excluded some, which took it down to 35%.
 ##### Before
-![image-1](charts/variance_skewness_example.png)<br>
+![image-1](charts/variance_skewness_example.PNG)<br>
 ##### After 
-![image-2](charts/variance_skewness_example_after_log.png)<br>
+![image-2](charts/variance_skewness_example_after_log.PNG)<br>
 * Created spends on different categories as proportions of income
 * Created dummy variables for all categorical and discrete data
 * Ultimately had 47 features
