@@ -16,7 +16,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 
 | Before | After |
 | -------- | -------- |
-|![image-1](charts/pre-log.png) | ![image-2](charts/post-log.png)|
+|![image-1](charts/pre-log.PNG) | ![image-2](charts/post-log.PNG)|
 * Created spends on different categories as proportions of income
 * Created dummy variables for all categorical and discrete data
 * Ultimately had 47 features
