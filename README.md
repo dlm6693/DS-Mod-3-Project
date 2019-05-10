@@ -27,17 +27,16 @@ Predicting whether customers of a retail food company would or wouldn't be conve
     * Select k best was used to reduce the number, but ultimately excluded since it was found that it didn't help the models
 * Dummy classifier set baseline accuracy at 85%, demonstrating the massive class imbalance to be working against
 
-|        Logistic Regression     |       K Nearest Neighbors      |
-| --------------- | --------------- |
-| Baseline Scores | Tuned Scores | Baseline Scores | Tuned Scores |
-| --------------- | ------------ | --------------- | ------------ |
-| Accuracy: 80.5% | Accuracy: 81.4% | Accuracy: 69.0% | Accuracy: 78.8% |
-| F1 Score: 0.540 | F1 Score: 0.548 | F1 Score: 0.335 | F1 Score: 0.346 |
+#### Logistic Regression
+| Baseline Scores | Tuned Scores | 
+| --------------- | ------------ |
+| Accuracy: 80.5% | Accuracy: 81.4% | 
+| F1 Score: 0.540 | F1 Score: 0.548 | 
 
 #### K Nearest Neighbors
-|
-| 
-| 
+|Baseline Scores | Tuned Scores |
+| Accuracy: 69.0% | Accuracy: 78.8% |
+| F1 Score: 0.335 | F1 Score: 0.346 |
 | 
 
 #### Random Forest
