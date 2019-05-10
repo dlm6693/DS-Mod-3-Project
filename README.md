@@ -1,5 +1,5 @@
 # DS Mod 3 Project
-Predicting whether customers of a retail food company would or wouldn't be converted on the final campaign using data provided by Rodolfo Saldanha [I'm an inline-style link](https://www.kaggle.com/rodsaldanha/arketing-campaign#ml_project1_data.xlsx)
+Predicting whether customers of a retail food company would or wouldn't be converted on the final campaign using data provided by [Rodolfo Saldanha](https://www.kaggle.com/rodsaldanha/arketing-campaign#ml_project1_data.xlsx) on Kaggle.
 
 ## Methodology
 * Target: Response i.e. whether or not customer was converted on final campaign. Either a 1 for yes or 0 for no.
