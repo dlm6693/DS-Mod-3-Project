@@ -27,30 +27,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
     * Select k best was used to reduce the number, but ultimately excluded since Ifound that it didn't help the models
 * Dummy classifier set baseline accuracy at 85%, demonstrating the massive class imbalance to be working against
 * Created baselines for four different algorithms and tuned using randomized search
-Logistic
-#### Logistic Regression
-| Baseline Scores | Tuned Scores | 
-| --------------- | ------------ |
-| Accuracy: 80.5% | Accuracy: 81.4% | 
-| F1 Score: 0.540 | F1 Score: 0.548 | 
-
-#### K Nearest Neighbors
-|Baseline Scores | Tuned Scores |
-| --------------- | ------------ |
-| Accuracy: 69.0% | Accuracy: 78.8% |
-| F1 Score: 0.335 | F1 Score: 0.346 |
-
-#### Random Forest
-| Baseline Scores | Tuned Scores |
-| --------------- | ------------ |
-| Accuracy: 87.1% | Accuracy: 87.1% |
-| F1 Score: 0.523 | F1 Score: 0.555 |
-
-#### XG Boost
-| Baseline Scores | Tuned Scores |
-| --------------- | ------------ |
-| Accuracy: 85.1% | Accuracy: 88.0% |
-| F1 Score: 0.520 | F1 Score: 0.550 |
+![image-3](chart/model_scores.png)<br>
 
 ## Conclusions
 * Ultimately decided on the XG Boost as my final, improving accuracy by a whopping 3%!
