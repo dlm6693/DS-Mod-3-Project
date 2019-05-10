@@ -58,7 +58,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * All models including XG Boost seemed to perform quite well on the negative outcomes, but was only able to correctly predict positive ones about 3 out of 5 times as you can see in the confusion matrix
 ![image-3](charts/XG_Boost_Confusion_Matrix.png)<br>
 * Previous acceptances on other campaigns were most signficant indicators of wehter they were converted on the final campaign or not as seen in the below chart of feature improtances
-![image-4](chart/feature_importance.png)<br>
+![image-4](charts/feature_importance.png)<br>
 
 ## Next Steps
 * Models seemed to be rather complex. Would experiment further with trimming as parameters like max depth and number of estimators seemed high
