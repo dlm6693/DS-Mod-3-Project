@@ -27,6 +27,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
     * Select k best was used to reduce the number, but ultimately excluded since Ifound that it didn't help the models
 * Dummy classifier set baseline accuracy at 85%, demonstrating the massive class imbalance to be working against
 * Created baselines for four different algorithms and tuned using randomized search
+
 ![image-3](charts/model_scores.png)<br>
 
 ## Conclusions
