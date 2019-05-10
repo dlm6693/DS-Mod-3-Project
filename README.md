@@ -9,7 +9,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * Massive class imbalance: only about 12.5% of dataset had response of 1
 * Not real data: This set was clearly created by a user and there were some inconsistencies and confusing aspects that needed to be cleaned.
     * Additionally, I couldn't use any domain knowledge or perform any research to gain more intuition on the data because of this.
-* Large amount of variance, skewness and zero values in data
+* Large amount of variance, skewness and zero values in continuous features
 
 ## Feature Engineering
 * Used log transformations on skewed data to rein it in, but wasn't able to account for zero values, which made up about 50% of the data as seen below. Later excluded some, which took it down to 35%.
@@ -23,11 +23,11 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 
 ## Machine Learning Model Building
 * Before actually using any models, data was scaled using the Min Max Scaler and target was oversampled on training using SMOTE method.
-* Also tested out creating polynomial features, but having over 1200 vs. 47 actually didn't really make any difference
-    * Select k best was used to reduce the number, but ultimately excluded since it was found that it didn't help the models
+* Also tested out creating polynomial features, but having over 1200 vs. 47 actually didn't really make any difference, just a lot more complexity
+    * Select k best was used to reduce the number, but ultimately excluded since Ifound that it didn't help the models
 * Dummy classifier set baseline accuracy at 85%, demonstrating the massive class imbalance to be working against
-* Created baseline models for several different algorithms and tuned using randomized search
-
+* Created baselines for four different algorithms and tuned using randomized search
+Logistic
 #### Logistic Regression
 | Baseline Scores | Tuned Scores | 
 | --------------- | ------------ |
@@ -54,7 +54,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 
 ## Conclusions
 * Ultimately decided on the XG Boost as my final, improving accuracy by a whopping 3%!
-* A major caveat for this model is that there is a potential for overfitting as it the training data almost perfectly, but this could be due to class imbalance
+* A major caveat for this model is that there is a potential for overfitting as it the training data almost perfectly (99.6% accuracy, 0.996 F1 Score), but this could be due to class imbalance as well
 * All models including XG Boost seemed to perform quite well on the negative outcomes, but was only able to correctly predict positive ones about 3 out of 5 times as you can see in the confusion matrix
 ![image-3](charts/XG_Boost_Confusion_Matrix.png)<br>
 * Previous acceptances on other campaigns were most signficant indicators of wehter they were converted on the final campaign or not as seen in the below chart of feature improtances
