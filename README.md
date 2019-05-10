@@ -43,3 +43,4 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * Examine correlation between features more deeply to see if there were any redundancies I could have accounted for
 * Dive deeper into the potential of overfitting. Just dropping features proportionally made both the training and testing scores worse, and did not make them more even
 * Experiment more with different versions of the dataset i.e. no transformations, no exclusions of zero values
+* Find a way to further acount for said 0 values
