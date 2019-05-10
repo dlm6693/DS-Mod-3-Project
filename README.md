@@ -15,7 +15,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * Used log transformations on skewed data to rein it in, but wasn't able to account for zero values, which made up about 50% of the data as seen below. Later excluded some, which took it down to 35%.
 | Before | After |
 | -------- | -------- |
-|![chart1](charts/pre-log.png) | ![chart1](charts/post-log.png)|
+|![image-1](charts/pre-log.png) | ![image-2](charts/post-log.png)|
 * Created spends on different categories as proportions of income
 * Created dummy variables for all categorical and discrete data
 * Ultimately had 47 features
