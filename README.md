@@ -26,6 +26,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * Also tested out creating polynomial features, but having over 1200 vs. 47 actually didn't really make any difference
     * Select k best was used to reduce the number, but ultimately excluded since it was found that it didn't help the models
 * Dummy classifier set baseline accuracy at 85%, demonstrating the massive class imbalance to be working against
+* Created baseline models for several different algorithms and tuned using randomized search
 
 #### Logistic Regression
 | Baseline Scores | Tuned Scores | 
@@ -35,12 +36,13 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 
 #### K Nearest Neighbors
 |Baseline Scores | Tuned Scores |
+| --------------- | ------------ |
 | Accuracy: 69.0% | Accuracy: 78.8% |
 | F1 Score: 0.335 | F1 Score: 0.346 |
-| 
 
 #### Random Forest
 | Baseline Scores | Tuned Scores |
+| --------------- | ------------ |
 | Accuracy: 87.1% | Accuracy: 87.1% |
 | F1 Score: 0.523 | F1 Score: 0.555 |
 
