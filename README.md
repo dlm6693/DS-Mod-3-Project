@@ -27,15 +27,15 @@ Predicting whether customers of a retail food company would or wouldn't be conve
     * Select k best was used to reduce the number, but ultimately excluded since Ifound that it didn't help the models
 * Dummy classifier set baseline accuracy at 85%, demonstrating the massive class imbalance to be working against
 * Created baselines for four different algorithms and tuned using randomized search
-![image-3](chart/model_scores.png)<br>
+![image-3](charts/model_scores.png)<br>
 
 ## Conclusions
 * Ultimately decided on the XG Boost as my final, improving accuracy by a whopping 3%!
 * A major caveat for this model is that there is a potential for overfitting as it the training data almost perfectly (99.6% accuracy, 0.996 F1 Score), but this could be due to class imbalance as well
 * All models including XG Boost seemed to perform quite well on the negative outcomes, but was only able to correctly predict positive ones about 3 out of 5 times as you can see in the confusion matrix
-![image-3](charts/XG_Boost_Confusion_Matrix.png)<br>
+![image-4](charts/XG_Boost_Confusion_Matrix.png)<br>
 * Previous acceptances on other campaigns were most signficant indicators of wehter they were converted on the final campaign or not as seen in the below chart of feature improtances
-![image-4](charts/feature_importance.png)<br>
+![image-5](charts/feature_importance.png)<br>
 
 ## Next Steps
 * Models seemed to be rather complex. Would experiment further with trimming as parameters like max depth and number of estimators seemed high
