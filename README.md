@@ -42,7 +42,6 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 
 #### Random Forest
 | Baseline Scores | Tuned Scores |
-| --------------- | ------------ |
 | Accuracy: 87.1% | Accuracy: 87.1% |
 | F1 Score: 0.523 | F1 Score: 0.555 |
 
