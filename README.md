@@ -21,7 +21,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * Created dummy variables for all categorical and discrete data
 * Ultimately had 47 features
 
-## Machine Learning Model Building
+## Model Building
 * Before actually using any models, data was scaled using the Min Max Scaler and target was oversampled on training using SMOTE method.
 * Also tested out creating polynomial features, but having over 1200 vs. 47 actually didn't really make any difference, just a lot more complexity
     * Select k best was used to reduce the number, but ultimately excluded since I found that it didn't help the models
