@@ -2,6 +2,8 @@
 Predicting whether customers of a retail food company would or wouldn't be converted on the final campaign using data provided by [Rodolfo Saldanha](https://www.kaggle.com/rodsaldanha/arketing-campaign#ml_project1_data.xlsx) on Kaggle.
 
 ## Methodology
+* Data set was approximately 2,000 records with 29 columns, several of which were simply identifiers, a single variable for its entirety (e.g. one entitled Z_CostContact just had the value 3) or superfluous
+    * A relatively small set was chosen to be able to quickly process and focus on the practice EDA, feature engineering and machine learning model building rather than simply waiting for algorithms to run
 * Target: Response i.e. whether or not customer was converted on final campaign. Either a 1 for yes or 0 for no.
 * Features: birth year, education level, maritial status, annual income, number of children and teenagers in the home, number of days since last purchase (recency), amount spent on several different types of products over past two years, number of purchases through different channels, whether or not they were converted on five previous campaigns.
 
@@ -12,7 +14,19 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * Large amount of variance, skewness and zero values in continuous features
 
 ## Exploratory Data Analysis
-* No features had a strong correlation with the target, but conversions on previous campaigns were the strongest
+* No features had a strong correlation with the target, but conversions on previous campaigns were the strongest as well as amount spent on certain product categories and number of catalog purchases
+| Feature | Correlation Coefficient |
+| -------- | -------- |
+| AcceptedCmp5 | 0.327644 |
+| AcceptedCmp1 | 0.294834 |
+| AcceptedCmp3 | 0.252882 |
+| MntMeatProducts | 0.251877 |
+| MntWines | 0.247467 |
+| NumCatalogPurchases | 0.241731 |
+* Additionally features did not highly correlate with each other
+* Scatter plots of features against target didn't reveal much either, even for the top ones according to the correlation matrix
+![image-0](charts/scatter_example.png) ![image-0](charts/scatter_example1.png)<br>
+* Distribution and box plots further uncovered variance and skewness in the data, which was worked on in the feature engineering stage
 
 ## Feature Engineering
 * Used log transformations on skewed data to rein it in, but wasn't able to account for zero values, which made up about 50% of the data as seen below. Later excluded some, which took it down to 35%.
