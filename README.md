@@ -12,6 +12,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * Large amount of variance, skewness and zero values in continuous features
 
 ## Exploratory Data Analysis
+* No features had a strong correlation with the target, but conversions on previous campaigns were the strongest
 
 ## Feature Engineering
 * Used log transformations on skewed data to rein it in, but wasn't able to account for zero values, which made up about 50% of the data as seen below. Later excluded some, which took it down to 35%.
