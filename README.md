@@ -15,6 +15,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 
 ## Exploratory Data Analysis
 * No features had a strong correlation with the target, but conversions on previous campaigns were the strongest as well as amount spent on certain product categories and number of catalog purchases
+
 | Feature | Correlation Coefficient |
 | -------- | -------- |
 | AcceptedCmp5 | 0.327644 |
