@@ -11,6 +11,8 @@ Predicting whether customers of a retail food company would or wouldn't be conve
     * Additionally, I couldn't use any domain knowledge or perform any research to gain more intuition on the data because of this.
 * Large amount of variance, skewness and zero values in continuous features
 
+## Exploratory Data Analysis
+
 ## Feature Engineering
 * Used log transformations on skewed data to rein it in, but wasn't able to account for zero values, which made up about 50% of the data as seen below. Later excluded some, which took it down to 35%.
 
@@ -35,7 +37,7 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 * A major caveat for this model is that there is a potential for overfitting as the training data was predicted almost perfectly (99.6% accuracy, 0.996 F1 Score), but this could be due to the class imbalance as well
 * All models including XG Boost seemed to perform quite well on the negative outcomes, but was only able to correctly predict positive ones about 3 out of 5 times as you can see in the confusion matrix
 ![image-4](charts/XG_Boost_Confusion_Matrix.png)<br>
-* Previous acceptances on other campaigns were most signficant indicators of whether they were converted on the final campaign or not as seen in the below chart of feature improtances
+* Previous acceptances on other campaigns were most signficant indicators of whether they were converted on the final campaign or not confirming suspsicions from EDA as seen in the below chart of feature improtances
 ![image-5](charts/feature_importance.png)<br>
 
 ## Next Steps
