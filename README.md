@@ -26,7 +26,10 @@ Predicting whether customers of a retail food company would or wouldn't be conve
 | NumCatalogPurchases | 0.241731 |
 * Additionally features did not highly correlate with each other
 * Scatter plots of features against target didn't reveal much either, even for the top ones according to the correlation matrix
-![image-0](charts/scatter_example.PNG) ![image-0](charts/scatter_example1.PNG)<br>
+
+Scatter Example 1           |  Scatter Example 2
+:-------------------------:|:-------------------------:
+![image-0](charts/scatter_example.PNG)  | ![image-0](charts/scatter_example1.PNG)
 * Distribution and box plots further uncovered variance and skewness in the data, which was worked on in the feature engineering stage
 
 ## Feature Engineering
