@@ -70,8 +70,8 @@ Scatter Example 1           |  Scatter Example 2
 ## EDA Round 2
 * Noticed the final model was rather complex so I decided to go back, do more EDA to if there were any more relationships I could find and features I could potentially remove
 * After reexamining correlation between features and target as well as examining count plots and distributions and descriptive statistics of all features based on response, I removed five to reduce the number of dimensions to 42 from 47
-![image-6](charts/count_plot_response_example.png)<br>
-![image-7](charts/dist_plot_response_example.png)<br>
+![image-6](charts/count_plot_response_example.PNG)<br>
+![image-7](charts/dist_plot_response_example.PNG)<br>
 * The above count plot clearly shows there's a relationship between being single and whether or not you were converted on the campaign
 * The above distribution shows that those who were converted on the final campaign spent more on meat products, which was indicated by the correlation metrics and confirmed by descriptive statistics
 
