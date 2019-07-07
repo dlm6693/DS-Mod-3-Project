@@ -1,4 +1,4 @@
-# DS Mod 3 Project
+# Marketing Conversion Classification
 Predicting whether customers of a retail food company would or wouldn't be converted on the final campaign using data provided by [Rodolfo Saldanha](https://www.kaggle.com/rodsaldanha/arketing-campaign#ml_project1_data.xlsx) on Kaggle.
 
 ## Overall Findings
